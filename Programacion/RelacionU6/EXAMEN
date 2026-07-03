@@ -1,0 +1,46 @@
+Paquete: compraonline
+
+# Clase productos
+
+Debe tener nombre, marca y fecha registro. Regex: (3[01]|[21][0-9]|0?[1-9])[/](1[0-2]|0?[1-9])[/][\\d]+
+
+* Constructor por nombre, marca y fecha de registro. Debe lanzar una excepción si la fecha no es válida	
+* validarFecha() Método que comprueba si la fecha es correcta
+* Método toString
+--------------------------------------------------------------------------------
+# Clase vendedores
+
+Debe tener nombre, una id numérica y productos en venta. El id se pone automáticamente y corresponder a la cantidad de vendedores que hay
+
+* Constructor solo con nombre
+* anadirProducto() añade un nuevo producto a la venta para el vendedor
+* eliminarProducto()  Elimina el producto dado. No deben quedar huecos en la array
+* buscarProducto() Pide un nombre de producto y lo busca entre los productos a la venta. Si lo encuentra, lo devuelve, de lo contrario, devuelve *null*
+* listarProductos() Devuelve un *string* con toda la información de los productos a la venta
+* Método toString
+* getNombre()
+* getId()
+
+# Clase plataforma de ventas
+
+Debe tener nombre y una lista de vendedores con un máximo de 10 vendedores
+
+* Constructor solo con nombre
+* registrarVendedor() Añade un nuevo vendedor a la plataforma y devuelve *true* si pudo, de lo contrario, no se añade y devuelve *false*
+* buscarProducto() Busca un producto por su nombre entre los vendedores de la plataforma y devuelve su información en caso de encontrarlo. Sino, devuelve *"Producto no disponible"*
+* listarVendedores() Devuelve un *string* con los nombres de todos los vendedores en la plataforma
+* listarProductos() Devuelve un *string* con todos los productos disponibles en la plataforma
+
+
+# Clase principal
+
+1. Crear 3 productos y manejar las excepciones
+2. Crear 2 vendedores
+3. Añade dos productos a un vendedor, y el restante al otro
+4. Crea una plataforma con el nombre que pida el usuario
+5. Registra los vendedores a la plataforma
+6. Muestra los vendedores registrados en la plataforma
+7. Muestra la información de todos los productos en venta en la plataforma
+8. Busca el producto que el usuario te pida
+9. Elimina un producto
+10. Muestra los productos en venta de nuevo
