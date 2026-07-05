@@ -1,0 +1,22 @@
+Staff(ID#, CompanyID#, ChildID#, d.o.birth, Address, Since)
+Perform(StaffID#, TaskID#)
+Task(ID#, Name, Description)
+Company(ID#, Name)
+Wife(ID#, Name, staffID)
+Child(ID#, Name#)
+
+
+
+MAPPING 2
+employe(employeeID, Employe-name, telephone-number, start-date,start-date,)
+manager(managerID, EmployeID)
+customer(Customer-id#, employeID#, customer-name, customer-street, customer-city, type)
+borrower(customerID#, loanID#)
+loan(loan-number#, branchID#, amount)
+payment(payment-amount#,payment-date#)
+branch(branch-name, branch-city, assets)
+dependent(ID#, Name)
+depositor(customerID#, accountNumberID#, acces-date)
+account(account-number#, balance)
+savings-account(accountID#, interest-rate)
+checking(accountID#, overdraft-amount)
