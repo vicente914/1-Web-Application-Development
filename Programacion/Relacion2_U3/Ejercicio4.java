@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Ejercicio4
 {
-	public static void main(String[] args);
+	public static void main(String[] args)
 	{
 		//Variables y objetos
 		Scanner sc = new Scanner(System.in);
@@ -9,9 +9,14 @@ public class Ejercicio4
 		//Resolución del problema
 		System.out.print("Dinos la cantidad de números que deseas introducir: ");
 		cantidad = sc.nextInt();
-	  for(contador = 0;contador < cantidad;contador++)
-	  {
-	    System.out.print("");
-	  }
+		
+		for(contador = 0;contador < cantidad;contador++)
+		{
+			System.out.print("Introduce un número: ");
+			num = sc.nextInt();
+			sc.nextLine();
+		}
+
+		System.out.println("Has introducido "+contador+" números");
 	}
 }

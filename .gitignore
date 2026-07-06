@@ -1,0 +1,26 @@
+#Ejercicios compilados
+*.class
+
+#Imagenes
+*.png
+*.jpg
+*.JPG
+*.PNG
+*.gif
+*.GIF
+
+# Archivos de Office y PDF
+*.pdf
+*.docx
+*.odt
+*.pptx
+*.xlsx
+
+# Archivos comprimidos
+*.zip
+*.rar
+*.tar.gz
+
+# Archivos temporales de Ubuntu/LibreOffice
+*.~
+.*.swp

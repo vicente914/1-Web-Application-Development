@@ -13,9 +13,10 @@ public class Ejercicio8
 		base = sc.nextDouble();
 		System.out.print("Introduce a cuanto quieres elevar introducido: ");
 		exponente = sc.nextInt();
+		sc.nextLine();
 		
-		while()
-		{
-		}
+		double resultado = Math.pow(base, exponente);
+
+		System.out.println(resultado);
 	}
 }
